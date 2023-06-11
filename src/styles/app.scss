@@ -1,0 +1,25 @@
+@import "./libs/reset";
+@import "./fonts.scss";
+@import "./variables";
+@import "./mixins";
+
+:root {
+  font-family: "Grtsk Peta", sans-serif;
+  background-color: $background-color;
+  font-size: 14px;
+  color: $primary-color;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper {
+  max-width: 1390px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  flex: 1;
+}

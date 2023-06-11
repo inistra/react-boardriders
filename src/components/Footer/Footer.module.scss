@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.footer {
+  background-color: $primary-color;
+  padding: 0 15px;
+}
+
+.content {
+  @include wrapper;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.mailing {
+  position: relative;
+  .mail {
+    position: absolute;
+    top: 16px;
+    left: 22px;
+  }
+  input {
+    min-width: 450px;
+    border: 2px solid #1d1d1d;
+    padding: 14px 0px 14px 54px;
+    color: $background-color;
+  }
+  button {
+    position: absolute;
+    top: 14px;
+    right: 25px;
+    cursor: pointer;
+  }
+}
